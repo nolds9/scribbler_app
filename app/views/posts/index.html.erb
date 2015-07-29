@@ -1,0 +1,8 @@
+<div class="posts">
+  <% @posts.each do |post| %>
+    <h2><%= post.title %></h2>
+    <h5>Posted by: <%= post.user.username %></h5>
+    <%= image_tag post.image, class: "blog-image" %>
+    <p><%= post.body %></p>
+  <% end %>
+</div>
