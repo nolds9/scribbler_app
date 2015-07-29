@@ -45,3 +45,5 @@ end
 
 gem "pry"
 gem "devise"
+gem 'simple_form'
+# gem 'materialize'
