@@ -3,6 +3,7 @@
 <head>
   <title>ScribbleApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -11,6 +12,12 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
   </div>
-  <%= yield %>
+  <div class="container">
+    <header>
+      <h1><%= link_to "Scribble", root_path %></h1>
+      <%= link_to "New Post", new_post_path, class:"new-post" %>
+    </header>
+      <%= yield %>
+    </div>
 </body>
 </html>
