@@ -35,44 +35,44 @@ h1 a {
   color: white;
 }
 
-.entry {
+.post {
   margin-bottom: 3em;
   border: 5px white solid;
   border-radius: 10px;
   padding: 1em;
 }
 
-.entry-header, .entry-edit-delete {
+.post-header, .post-edit-delete {
   display: block;
 }
 
-.entry-header {
+.post-header {
   margin-bottom: 1em;
 }
 
-.entry-header > span {
+.post-header > span {
   display: block;
 }
 
-.entry-header span:nth-child(2) {
+.post-header span:nth-child(2) {
   font-size: 0.7em;
 }
 
-.entry-posted-by {
+.post-posted-by {
   font-weight: 100;
   color: black;
 }
 
-.entry-photo {
+.post-photo {
   width: 100%;
   border-radius: 10px;
 }
 
-.entry-edit-delete {
+.post-edit-delete {
   margin-bottom: 1em;
 }
 
-.entry-edit-delete a {
+.post-edit-delete a {
   float: left;
   display: inline-block;
   border-radius: 5px;
@@ -85,7 +85,7 @@ h1 a {
   background-color: #55ACEE;
 }
 
-.entry-edit-delete button {
+.post-edit-delete button {
   float: right;
   display: inline-block;
   border: none;

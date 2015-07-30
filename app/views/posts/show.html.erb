@@ -1,19 +1,16 @@
-<div class="entry">
-  <div class="entry-header">
+<div class="post">
+  <div class="post-header">
     <span><%= @post.title %></span>
     <span><span class="entry-posted-by">Posted by&nbsp;</span><%= @post.user.username %></span>
-    <span><%= time_ago_in_words(@post.created_at) %></span>
+    <span><%= time_ago_in_words(@post.created_at)%>ago</span>
   </div>
-  <img class="entry-photo" src="<%= @post.image %>">
-  <div class="entry-edit-delete">
-    <a href="/posts/<%= @post.id %>/edit">Edit</a>
-    <form action="/posts/<%= @post.id %>" method="post">
-      <input name="_method" type="hidden" value="delete">
-      <button type="submit">Delete</button>
-    </form>
+  <%= image_tag @post.image, class: "post-photo" %>
+  <div class="post-edit-delete">
+    <p><%= @post.body %></p>
+    <%= link_to "Edit", edit_post_path(@post) %>
   </div>
-</div>
-<div class="entry">
+</div>.
+<div class="post">
   <h2>Comments:</h2>
   <% @comments.each do |comment| %>
     <p> Author: <%= comment.author %> </p>
