@@ -11,7 +11,6 @@
     <div class="entry-edit-delete">
       <p><%= post.body %></p>
       <a href="/posts/<%= post.id %>/edit">Edit</a>
-      <!-- delete -->
       <form action="/posts/<%= post.id %>" method="post">
         <input name="_method" type="hidden" value="delete">
         <button type="submit">Delete</button>
