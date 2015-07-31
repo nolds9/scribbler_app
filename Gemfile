@@ -46,4 +46,6 @@ end
 gem "pry"
 gem "devise"
 gem 'simple_form'
+gem 'rails_12factor', group: :production
+
 # gem 'materialize'

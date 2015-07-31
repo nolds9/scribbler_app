@@ -1,12 +1,12 @@
 <div class="post">
   <div class="post-header">
-    <span><%= @post.title %></span>
+    <span class="title"><%= @post.title %></span>
     <span><span class="entry-posted-by">Posted by&nbsp;</span><%= @post.user.username %></span>
     <span><%= time_ago_in_words(@post.created_at)%> ago</span>
   </div>
   <%= image_tag @post.image, class: "post-photo" %>
   <div class="post-edit-delete">
-    <p><%= @post.body %></p>
+    <p class="content"><%= @post.body %></p>
     <% if user_signed_in? %>
       <%= link_to "Edit", edit_post_path(@post) %>
       <%= link_to "delete", @post, method: :delete %>
