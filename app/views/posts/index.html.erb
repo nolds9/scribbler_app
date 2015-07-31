@@ -1,7 +1,7 @@
 <% @posts.each do |post| %>
   <div class="post">
     <div class="post-header">
-      <span><%= post.title %></span>
+      <span class="title"><%= post.title %></span>
       <span><span class="post-posted-by">Posted by&nbsp;</span><%= post.user.username %><span> <%= time_ago_in_words(post.created_at) %> ago</span></span>
     </div>
     <a href="/posts/<%= post.id %>">

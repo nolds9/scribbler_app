@@ -15,7 +15,15 @@
   <div class="container">
     <header>
       <h1><%= link_to "Scribble", root_path %></h1>
-      <%= link_to "New Post", new_post_path, class:"new-post" %>
+      <nav>
+        <%= link_to "New Post", new_post_path, class:"new-post"  %>
+        <% if user_signed_in? %>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class:"new-post"  %>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path, class:"new-post"  %>
+          <%= link_to "Sign up", new_user_registration_path, class:"new-post"  %>
+        <% end %>
+      </nav>
     </header>
       <%= yield %>
     </div>

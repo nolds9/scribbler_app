@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+.msg {
+  text-align: center
+}
+
 header {
   margin-bottom: 2em;
 }
@@ -23,8 +27,13 @@ h1 a {
   text-decoration: none;
 }
 
+nav {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
 .new-post {
-  display: table;
+  display: inline-block;
   margin: 0 auto;
   border-radius: 5px;
   padding: 0 6px;
